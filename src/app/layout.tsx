@@ -29,6 +29,10 @@ export const metadata: Metadata = {
     "mobile locksmith",
   ],
   authors: [{ name: "Joe Davis Auto Locksmiths" }],
+  icons: {
+    icon: "/logo.png",
+    apple: "/logo.png",
+  },
   metadataBase: new URL("https://joedavis.co.za"),
   alternates: {
     canonical: "https://joedavis.co.za",

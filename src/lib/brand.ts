@@ -9,9 +9,9 @@ export const BRAND = {
   domain: "joedavis.co.za",
   tagline: "Mobile auto locksmith — keys cut, transponders programmed, work accredited.",
   // South African mobile number, international format, no leading + or 00.
-  // Replace with the real business WhatsApp number before going live.
-  whatsappNumber: "27821234567",
-  phoneDisplay: "+27 82 123 4567",
+  // 082 882 3614 -> 27 82 882 3614
+  whatsappNumber: "27828823614",
+  phoneDisplay: "+27 82 882 3614",
   email: "hello@joedavis.co.za",
   serviceArea: "Gauteng & surrounding areas, South Africa",
   hours: "Mon–Fri 07:00–18:00 · Sat 08:00–13:00 · Sun closed (emergency callouts only)",

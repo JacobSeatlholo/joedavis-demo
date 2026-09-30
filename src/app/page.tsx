@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import {
   Key,
@@ -44,16 +45,16 @@ export default function Home() {
       {/* ---------- Header ---------- */}
       <header className="sticky top-0 z-40 w-full border-b border-border/60 bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/65">
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 h-14 flex items-center justify-between gap-3">
-          <a href="#top" className="flex items-center gap-2 min-w-0">
-            <span className="h-8 w-8 rounded-md bg-[var(--brand-amber)] text-[var(--brand-amber-foreground)] flex items-center justify-center shrink-0">
-              <Key className="h-4 w-4" />
-            </span>
-            <span className="flex flex-col leading-tight min-w-0">
-              <span className="font-semibold text-sm sm:text-base truncate">{BRAND.name}</span>
-              <span className="text-[10px] sm:text-xs text-muted-foreground truncate">
-                {BRAND.domain}
-              </span>
-            </span>
+          <a href="#top" className="flex items-center gap-2 min-w-0" aria-label={`${BRAND.name} — home`}>
+            <Image
+              src="/logo.png"
+              alt={`${BRAND.name} logo`}
+              width={140}
+              height={42}
+              priority
+              className="h-7 sm:h-8 w-auto shrink-0"
+            />
+            <span className="sr-only">{BRAND.domain}</span>
           </a>
           <nav className="hidden md:flex items-center gap-1 text-sm">
             <a href="#services" className="px-3 py-2 rounded-md hover:bg-muted/60 transition-colors">
@@ -443,12 +444,13 @@ export default function Home() {
         <div className="mx-auto w-full max-w-6xl px-4 sm:px-6 py-10">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <div className="flex items-center gap-2">
-                <span className="h-8 w-8 rounded-md bg-[var(--brand-amber)] text-[var(--brand-amber-foreground)] flex items-center justify-center">
-                  <Key className="h-4 w-4" />
-                </span>
-                <span className="font-semibold">{BRAND.name}</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt={`${BRAND.name} logo`}
+                width={220}
+                height={66}
+                className="h-10 sm:h-11 w-auto brightness-0 invert"
+              />
               <p className="mt-3 text-sm text-[var(--brand-slate-foreground)]/70 max-w-xs">
                 {BRAND.tagline}
               </p>
