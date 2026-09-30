@@ -14,5 +14,5 @@ export function buildWhatsAppLink(message: string, number: string = BRAND.whatsa
  * and the header CTA.
  */
 export const DEFAULT_WHATSAPP_MESSAGE =
-  `Hi ${BRAND.shortName}, I'd like to enquire about an auto locksmith service. ` +
+  `Hi ${BRAND.shortName} Locksmiths, I'd like to enquire about a service. ` +
   `Could you let me know when you're available?`;

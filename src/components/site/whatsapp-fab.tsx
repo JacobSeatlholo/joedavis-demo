@@ -16,8 +16,8 @@ export function WhatsAppFab() {
       href={href}
       target="_blank"
       rel="noopener noreferrer"
-      aria-label="Chat with Joe Davis Auto Locksmiths on WhatsApp"
-      className="fixed z-50 bottom-4 right-4 sm:bottom-6 sm:right-6 inline-flex items-center justify-center rounded-full h-14 w-14 shadow-lg shadow-black/20 bg-[#25D366] text-white hover:bg-[#1ebd5a] transition-colors"
+      aria-label="Chat with Joe Davis Locksmiths on WhatsApp"
+      className="fixed z-50 bottom-4 right-4 sm:bottom-6 sm:right-6 inline-flex items-center justify-center rounded-full h-14 w-14 shadow-xl shadow-black/25 bg-[#25D366] text-white hover:bg-[#1ebd5a] transition-colors"
       initial={{ scale: 0, opacity: 0 }}
       animate={{ scale: 1, opacity: 1 }}
       transition={{ delay: 0.4, type: "spring", stiffness: 220, damping: 18 }}
@@ -28,6 +28,7 @@ export function WhatsAppFab() {
         className="absolute inset-0 rounded-full bg-[#25D366] animate-ping opacity-30 -z-10"
         aria-hidden="true"
       />
+      <span className="absolute -top-1 -right-1 h-3 w-3 rounded-full bg-[var(--brand-gold,#ffcc02)] border-2 border-white" aria-hidden="true" />
     </motion.a>
   );
 }

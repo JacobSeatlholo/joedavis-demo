@@ -121,15 +121,24 @@
   }
   body {
     @apply bg-background text-foreground;
+    /* Subtle off-white warmth matching the brand cream panels */
+    background-color: #fafafa;
+  }
+  ::selection {
+    background-color: var(--brand-gold);
+    color: var(--brand-gold-foreground);
   }
 }
 
-/* Brand palette override for Joe Davis Auto Locksmiths.
-   Brass/amber accent on dark slate — gives a locksmith / key-trade feel
-   and avoids the forbidden indigo/blue range. */
+/* Brand palette for Joe Davis Locksmiths — mirrors joedavis.co.za:
+   #FFCC02 brand gold, #2B2B2B near-black, #F0F3F2 cream panel, #3C3950 slate text */
 :root {
-  --brand-amber: oklch(0.78 0.16 70);
-  --brand-amber-foreground: oklch(0.18 0.02 70);
-  --brand-slate: oklch(0.21 0.015 250);
-  --brand-slate-foreground: oklch(0.985 0 0);
+  --brand-gold: #ffcc02;
+  --brand-gold-foreground: #1a1a1a;
+  --brand-gold-soft: #ffdf48;
+  --brand-black: #2b2b2b;
+  --brand-black-deep: #131313;
+  --brand-cream: #f0f3f2;
+  --brand-slate: #3c3950;
+  --brand-slate-foreground: #ffffff;
 }
